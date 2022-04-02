@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+//package protobuf.common;
+
+option go_package="protobuf/common";
+
+enum STATUS {
+    SUCCESS = 0;
+    FAILED = 1;
+}
+
+message commonResp {
+    STATUS status = 1;
+    int32 code = 2;
+    string message = 3;
+    string resultJson = 4;
+}

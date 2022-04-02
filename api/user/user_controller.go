@@ -24,7 +24,9 @@ func SendMessageAll(c *gin.Context) {
 
 // todo:1 查看在线用户列表
 func OnLineList(c *gin.Context) {
-
+	// 初始化proto的结构体
+	// 返回数据
+	c.JSON(200, "success")
 }
 
 
